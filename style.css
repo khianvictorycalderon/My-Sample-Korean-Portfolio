@@ -1,0 +1,211 @@
+/* This CSS design preset file was created by: Khian Victory D. Calderon */
+
+/* font family */
+body {
+    font-family: 'Dubai Light', 'Dubai', 'Helvetica', 'Arial', 'Futura', 'Roboto', 'Avenir', sans-serif;
+    display:flex;
+    flex-direction:column;
+    margin:0;
+    padding:0;
+    background:black;
+}
+
+/* font sizes */
+.t1 {
+    font-size:3.5em;
+}
+.t2 {
+    font-size:2.5em;
+}
+.t3 {
+    font-size:1.5em;
+}
+.t4 {
+    font-size:1em;
+}
+
+/* alignment */ 
+.center-h {
+    text-align:center;
+    align-items:center;
+}
+.center-v {
+    text-align:center;
+    vertical-align: middle;
+}
+.left {
+    text-align:left;
+}
+.right {
+    text-align:right;
+}
+
+/* padding */ 
+.pd1 {
+    padding:1%;
+}
+.pd2 {
+    padding:2%
+}
+.pd3 {
+    padding:3%
+}
+.pd4 {
+    padding:4%
+}
+
+/* display flex */ 
+.flex-c {
+    display:flex;
+    flex-direction:column;
+}
+.flex-r {
+    display:flex;
+    flex-direction:row;
+}
+.flex {
+    flex:1;
+}
+
+.sampleSlideLeftToRight {
+    animation:slideLeftToRight 0.5s ease-out 1s 2 forwards;
+}
+
+.images {
+    width:20%;
+    border-radius:35px;
+    height:auto;
+}
+
+@keyframes slideLeftToRight {
+    from { /* can also use percentage 0% */
+        opacity:0;
+        transform:translateX(-50px);
+    }
+    to { /* can also use percentage 100% */
+        opacity:1;
+        transform:translateX(0px);
+    }
+}
+
+@keyframes slideLeftToRightwithDelay {
+    0% {
+        opacity:0;
+        transform:translateX(-50px);
+    }
+    30% {
+        opacity:0;
+        transform:translateX(-50px);
+    }
+    100% {
+        opacity:1;
+        transform:translateX(0px);
+    }
+}
+
+
+#content {
+    width:100%;
+    margin:0;
+    padding:0;
+}
+
+#area1 {
+    background-image:url('backgrounds/south_korean_flag.jpg');
+    background-size:cover;
+    background-attachment:fixed;
+    color:white;
+}
+
+#area1-text {
+    animation:slideLeftToRight 2s ease-out;
+}
+
+.fit-image {
+    width:100%;
+    height:auto;
+}
+
+.cab {
+    width:90%;
+    margin:auto;
+    background-color:rgb(60, 197, 239);
+    cursor:pointer;
+    font-weight:bold;
+    color:black;
+    border-radius:35px;
+    font-family: 'Dubai Light', 'Dubai', 'Helvetica', 'Arial', 'Futura', 'Roboto', 'Avenir', sans-serif;
+    transition:0.3s;
+}
+
+.cab:hover, .cab:active {
+    filter:brightness(150%);
+}
+
+#area2 {
+    animation:slideLeftToRightwithDelay 2.5s ease-out;
+}
+
+#area3 {
+    background-size:cover;
+    background-attachment:fixed;
+    background-image:url('backgrounds/korean_language.jpg');
+}
+
+#area3-text {
+    color:white;
+    animation:slideLeftToRightwithDelay 3.5s ease-out;
+}
+
+.link {
+    color:orange;
+}
+
+#area4 {
+    color:white;
+    animation:slideLeftToRightwithDelay 4.5s ease-out;
+}
+
+#area5-text {
+    animation:slideLeftToRightwithDelay 5.5s ease-out;
+}
+
+#area5 {
+    color:white;
+    background-size:cover;
+    background-attachment:fixed;
+    background-image:url('backgrounds/house_1.jpg');
+}
+
+#area6 {
+    word-wrap:break-word;
+    animation:slideLeftToRightwithDelay 6.5s ease-out;
+}
+
+/* for android display */
+@media (max-width: 768px) {
+    #area1, #area3, #area5 {
+        background-size: 100% 100%;
+    }
+    .t1 {
+        font-size:2.5em;
+    }
+    .t2 {
+        font-size:1.5em;
+    }
+    .t3 {
+        font-size:1.0em;
+    }
+    .t4 {
+        font-size:0.5em;
+    }
+    .images {
+        width:70%;
+        border-radius:35px;
+        height:auto;
+    }
+    #area1, #area3, #area5 {
+        background-size:300% 100%;
+        background-position:center;
+    }
+}
